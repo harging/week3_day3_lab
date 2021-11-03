@@ -10,7 +10,7 @@
     <h1>{{ title }}</h1>
     <ol>
         {% for o in myorders %}
-        <li>Name: {{o.customer_name}}- Order date: {{o.order_date}} - Quantity: {{o.quantity}} Game Title: {{o.game_title}} <a href="/orders/{{myorders.index(o)}}">View order</a></p></li>
+        <li>Name: {{o.customer_name}}- Order date: {{o.order_date}} <a href="/orders/{{myorders.index(o)}}">View order</a></p></li>
         {% endfor %}
     </ol>
 </body>

@@ -8,10 +8,6 @@
 </head>
 <body>
     <h1>{{ title }}</h1>
-    <ol>
-        {% for o in myorders %}
-        <li>Name: {{o.customer_name}}- Order date: {{o.order_date}} - Quantity: {{o.quantity}} Game Title: {{o.game_title}}</li>
-        {% endfor %}
-    </ol>
+    <p>Name: {{ myorders.customer_name }} Order date: {{ myorders.order_date }} Quantity: {{ myorders.quantity }} Game Title: {{myorders.game_title}}</p>
 </body>
 </html>
